@@ -193,18 +193,6 @@ body {
   padding: 10px;
 }
 
-.portfolio-title {
-	font-size: 48px;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin: 40px 0 20px;
-	clear: both;
-	text-align: center;
-}
-
 .contact-info {
 	display: flex;
 	justify-content: center;
@@ -226,103 +214,131 @@ body {
 	text-decoration: underline;
 }
 
-/* Ensure two-column layout compatibility */
-.profile-content-wrapper {
-  /*background: #333; Optional: dark background for white text readability; remove if your CSS has a dark background */
+.portfolio-title {
+	font-size: 48px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 40px 0 20px;
+	clear: both;
+	text-align: center;
 }
 
-/* Resume content styling */
+.profile-image-wrapper {
+	max-width: 80%;
+	max-height: 1200px;
+	height: 95%; /* Match content height */
+	position: relative;
+	overflow: hidden; /* Crop image if needed */
+}
+
+	.profile-image-wrapper img {
+		width: 100%;
+		height: 100%; /* Match resume content height */
+		object-fit: cover; /* Crop to fit taller, narrower box */
+		object-position: right;
+		display: block;
+		border-radius: 16px; /* Optional for style */
+	}
+
+.profile-content-wrapper {
+	padding: 20px; /* Reduced from 30px */
+	box-sizing: border-box;
+	min-height: 100%; /* Ensure it matches image height */
+}
+
 .resume-content {
-  width: 100%;
-  padding: 20px 0;
-  color: #fff; /* White text for all resume content */
+	width: 100%;
+	color: #fff; /* White text for resume content */
 }
 
 .resume-section-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  margin: 20px 0 10px;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	margin: 20px 0 10px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
 }
 
 .resume-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 5px;
 }
 
 .resume-date {
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 8px;
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 8px;
 }
 
 .resume-item p {
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 8px;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 8px;
 }
 
 .resume-item ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #fff;
+	list-style-type: disc;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	overflow-wrap: break-word; /* Ensure long text wraps */
 }
 
-.resume-item ul li {
-  margin-bottom: 6px;
-}
+	.resume-item ul li {
+		margin-bottom: 6px;
+	}
 
 .skills-wrapper {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .skills-column {
-  flex: 1;
-  min-width: 150px;
+	flex: 1;
+	min-width: 150px;
 }
 
-.skills-column h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 8px;
-}
+	.skills-column h4 {
+		font-size: 16px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 8px;
+	}
 
-.skills-column ul {
-  list-style-type: square;
-  margin-left: 20px;
-}
-
-.resume-contact p {
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.resume-contact a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.resume-contact a:hover {
-  color: #ccc;
-}
+	.skills-column ul {
+		list-style-type: square;
+		margin-left: 20px;
+	}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .skills-wrapper {
-    flex-direction: column;
-    gap: 15px;
-  }
+	.two-column-wrapper {
+		grid-template-columns: 1fr; /* Stack columns on mobile */
+	}
 
-  .resume-content {
-    padding: 10px 0;
-  }
+	.profile-image-wrapper {
+		max-width: 400px; /* Wider image on mobile */
+		height: auto; /* Reset height for mobile */
+		margin: 0 auto;
+	}
+
+		.profile-image-wrapper img {
+			height: auto; /* Natural height on mobile */
+		}
+
+	.profile-content-wrapper {
+		padding: 10px;
+	}
+
+	.skills-wrapper {
+		flex-direction: column;
+		gap: 15px;
+	}
 }
