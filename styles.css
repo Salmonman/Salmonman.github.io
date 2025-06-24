@@ -157,7 +157,7 @@ body {
 }
 
 .profile-image-wrapper img {
-  width: 100%;
+	height: 100%;
 }
 
 .profile-content-wrapper {
@@ -191,4 +191,138 @@ body {
   text-align: center;
   color: #dc0000;
   padding: 10px;
+}
+
+.portfolio-title {
+	font-size: 48px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 40px 0 20px;
+	clear: both;
+	text-align: center;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 40px;
+	font-size: 18px;
+	clear: both;
+	text-align: center;
+}
+
+.contact-info a {
+	color: #007bff;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+/* Ensure two-column layout compatibility */
+.profile-content-wrapper {
+  /*background: #333; Optional: dark background for white text readability; remove if your CSS has a dark background */
+}
+
+/* Resume content styling */
+.resume-content {
+  width: 100%;
+  padding: 20px 0;
+  color: #fff; /* White text for all resume content */
+}
+
+.resume-section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.resume-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.resume-date {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.resume-item p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.resume-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.resume-item ul li {
+  margin-bottom: 6px;
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.skills-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.skills-column ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.resume-contact p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.resume-contact a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.resume-contact a:hover {
+  color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .resume-content {
+    padding: 10px 0;
+  }
 }
