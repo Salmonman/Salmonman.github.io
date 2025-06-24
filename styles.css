@@ -1,0 +1,194 @@
+body {
+  font-family: system-ui;
+  margin: 0px;
+  background-color: #080808;
+  color: lightgray;
+  min-height: 100vh;
+  box-shadow: inset 0 0 100px black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: lightgray;
+}
+
+.portfolio-items-wrapper {
+	width: 95%;
+	padding-left: 2.5%;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  box-shadow: inset 0 0 50px black;
+  outline: 4px dashed black;
+  display: flex;
+  align-items: start;
+}
+
+.image-mouseover {
+  transition: 0.4s;
+  filter: brightness(100%);
+  width: 55%;
+  color: lightgray;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.image-mouseout {
+  transition: 0.4s;
+  filter: brightness(80%);
+  width: 45%;
+  color: transparent;
+}
+
+.text-box {
+  box-shadow: inset 0 0 50px black;
+  outline: 4px dashed black;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.text-wrapper {
+	position: relative;
+	height: 100%;
+    width: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
+	text-align: center;
+}
+
+.text {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 90%;
+	height: 100%;
+	overflow: auto;
+	font-size: 200%;
+	padding-left: 5%;
+    padding-right: 5%;
+}
+
+.title-mouseover {
+	transition: 0.4s;
+	color: transparent;
+}
+
+.title-mouseout {
+	transition: 0.4s;
+	color: gray;
+}
+
+.text-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 125%;
+}
+
+.text-mouseover {
+	transition: 0.4s;
+	color: white;
+}
+
+.text-mouseout {
+	transition: 0.4s;
+	color: transparent;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+.video-container {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
