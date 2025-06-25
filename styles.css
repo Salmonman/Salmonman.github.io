@@ -57,8 +57,8 @@ body {
 }
 
 .portfolio-items-wrapper {
-	width: 95%;
-	padding-left: 2.5%;
+  width: 95%;
+  padding-left: 2.5%;
 }
 
 .portfolio-item-wrapper {
@@ -76,6 +76,7 @@ body {
   outline: 4px dashed black;
   display: flex;
   align-items: start;
+  cursor: pointer; /* Indicate clickability */
 }
 
 .image-mouseover {
@@ -104,51 +105,51 @@ body {
 }
 
 .text-wrapper {
-	position: relative;
-	height: 100%;
-    width: 35%;
-    padding-left: 5%;
-    padding-right: 5%;
-	text-align: center;
+  position: relative;
+  height: 100%;
+  width: 35%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
 
 .text {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	width: 90%;
-	height: 100%;
-	overflow: auto;
-	font-size: 200%;
-	padding-left: 5%;
-    padding-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+  font-size: 200%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .title-mouseover {
-	transition: 0.4s;
-	color: transparent;
+  transition: 0.4s;
+  color: transparent;
 }
 
 .title-mouseout {
-	transition: 0.4s;
-	color: gray;
+  transition: 0.4s;
+  color: gray;
 }
 
 .text-overlay {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 125%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 125%;
 }
 
 .text-mouseover {
-	transition: 0.4s;
-	color: white;
+  transition: 0.4s;
+  color: white;
 }
 
 .text-mouseout {
-	transition: 0.4s;
-	color: transparent;
+  transition: 0.4s;
+  color: transparent;
 }
 
 .two-column-wrapper {
@@ -157,7 +158,7 @@ body {
 }
 
 .profile-image-wrapper img {
-	height: 100%;
+  height: 100%;
 }
 
 .profile-content-wrapper {
@@ -194,151 +195,215 @@ body {
 }
 
 .contact-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin-bottom: 40px;
-	font-size: 18px;
-	clear: both;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 18px;
+  clear: both;
+  text-align: center;
 }
 
 .contact-info a {
-	color: #007bff;
-	text-decoration: none;
-	margin: 0 10px;
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .contact-info a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .portfolio-title {
-	font-size: 48px;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	margin: 40px 0 20px;
-	clear: both;
-	text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0 20px;
+  clear: both;
+  text-align: center;
 }
 
 .profile-image-wrapper {
-	max-width: 80%;
-	max-height: 1200px;
-	height: 95%; /* Match content height */
-	position: relative;
-	overflow: hidden; /* Crop image if needed */
+  max-width: 80%;
+  max-height: 1200px;
+  height: 95%; /* Match content height */
+  position: relative;
+  overflow: hidden; /* Crop image if needed */
 }
 
-	.profile-image-wrapper img {
-		width: 100%;
-		height: 100%; /* Match resume content height */
-		object-fit: cover; /* Crop to fit taller, narrower box */
-		object-position: right;
-		display: block;
-		border-radius: 16px; /* Optional for style */
-	}
+.profile-image-wrapper img {
+  width: 100%;
+  height: 100%; /* Match resume content height */
+  object-fit: cover; /* Crop to fit taller, narrower box */
+  object-position: right;
+  display: block;
+  border-radius: 16px; /* Optional for style */
+}
 
 .profile-content-wrapper {
-	padding: 20px; /* Reduced from 30px */
-	box-sizing: border-box;
-	min-height: 100%; /* Ensure it matches image height */
+  padding: 20px; /* Reduced from 30px */
+  box-sizing: border-box;
+  min-height: 100%; /* Ensure it matches image height */
 }
 
 .resume-content {
-	width: 100%;
-	color: #fff; /* White text for resume content */
+  width: 100%;
+  color: #fff; /* White text for resume content */
 }
 
 .resume-section-title {
-	font-size: 24px;
-	font-weight: bold;
-	color: #fff;
-	margin: 20px 0 10px;
-	border-bottom: 2px solid #ccc;
-	padding-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
 
 .resume-item h3 {
-	font-size: 18px;
-	font-weight: bold;
-	color: #fff;
-	margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
 }
 
 .resume-date {
-	font-size: 14px;
-	color: #fff;
-	margin-bottom: 8px;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .resume-item p {
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 8px;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
 }
 
 .resume-item ul {
-	list-style-type: disc;
-	margin-left: 20px;
-	font-size: 16px;
-	color: #fff;
-	overflow-wrap: break-word; /* Ensure long text wraps */
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  overflow-wrap: break-word; /* Ensure long text wraps */
 }
 
-	.resume-item ul li {
-		margin-bottom: 6px;
-	}
+.resume-item ul li {
+  margin-bottom: 6px;
+}
 
 .skills-wrapper {
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .skills-column {
-	flex: 1;
-	min-width: 150px;
+  flex: 1;
+  min-width: 150px;
 }
 
-	.skills-column h4 {
-		font-size: 16px;
-		font-weight: bold;
-		color: #fff;
-		margin-bottom: 8px;
-	}
+.skills-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
 
-	.skills-column ul {
-		list-style-type: square;
-		margin-left: 20px;
-	}
+.skills-column ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(8, 8, 8, 0.9); /* Match body background with opacity */
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 100px black; /* Match body shadow */
+  transition: opacity 0.4s ease; /* Smooth fade-in */
+}
+
+.modal.show {
+  display: flex; /* Show modal when active */
+  opacity: 1;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  display: block;
+  margin: auto;
+  box-shadow: inset 0 0 50px black; /* Match portfolio-img-background shadow */
+  outline: 4px dashed black; /* Match portfolio-img-background outline */
+  transition: transform 0.4s ease; /* Smooth scale effect */
+  transform: scale(0.95); /* Slightly smaller for animation */
+}
+
+.modal.show .modal-content {
+  transform: scale(1); /* Full size when visible */
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: lightgray; /* Match body text color */
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Match image-mouseover text shadow */
+  transition: color 0.4s ease;
+}
+
+.close-btn:hover {
+  color: white; /* Match hover effects */
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-	.two-column-wrapper {
-		grid-template-columns: 1fr; /* Stack columns on mobile */
-	}
+  .two-column-wrapper {
+    grid-template-columns: 1fr; /* Stack columns on mobile */
+  }
 
-	.profile-image-wrapper {
-		max-width: 400px; /* Wider image on mobile */
-		height: auto; /* Reset height for mobile */
-		margin: 0 auto;
-	}
+  .profile-image-wrapper {
+    max-width: 400px; /* Wider image on mobile */
+    height: auto; /* Reset height for mobile */
+    margin: 0 auto;
+  }
 
-		.profile-image-wrapper img {
-			height: auto; /* Natural height on mobile */
-		}
+  .profile-image-wrapper img {
+    height: auto; /* Natural height on mobile */
+  }
 
-	.profile-content-wrapper {
-		padding: 10px;
-	}
+  .profile-content-wrapper {
+    padding: 10px;
+  }
 
-	.skills-wrapper {
-		flex-direction: column;
-		gap: 15px;
-	}
+  .skills-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modal-content {
+    max-width: 95%; /* Slightly more space on mobile */
+    max-height: 85vh;
+  }
+
+  .close-btn {
+    font-size: 30px; /* Smaller close button on mobile */
+    top: 15px;
+    right: 20px;
+  }
 }
